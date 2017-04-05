@@ -1,4 +1,15 @@
 GIT
+  remote: https://github.com/solidusio-contrib/solidus_editor.git
+  revision: b0be9d1df5b698ad7001372dd722961c7802e949
+  branch: master
+  specs:
+    solidus_editor (1.0.0)
+      ckeditor (~> 4.1)
+      deface (~> 1.0.2)
+      solidus_backend (>= 1.0, < 3)
+      tinymce-rails (~> 4.2.5)
+
+GIT
   remote: https://github.com/solidusio-contrib/solidus_log_viewer.git
   revision: 3b50d9a01d08160431389984dc0b3064c3a272eb
   specs:
@@ -78,6 +89,9 @@ GEM
       rails (>= 4.1, < 5.1)
     carmen (1.0.2)
       activesupport (>= 3.0.0)
+    ckeditor (4.2.2)
+      cocaine
+      orm_adapter (~> 0.5.0)
     cldr-plurals-runtime-rb (1.0.1)
     climate_control (0.1.0)
     cocaine (0.5.8)
@@ -322,6 +336,8 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
+    tinymce-rails (4.2.8)
+      railties (>= 3.1.1)
     truncate_html (0.9.3)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
@@ -366,6 +382,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   solidus (= 2.1)
   solidus_auth_devise
+  solidus_editor!
   solidus_log_viewer!
   solidus_static_content!
   spring

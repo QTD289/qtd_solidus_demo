@@ -39,3 +39,6 @@ gem 'solidus_log_viewer', github: 'solidusio-contrib/solidus_log_viewer'
 
 # Content management of pages for Solidus
 gem 'solidus_static_content', github: 'solidusio-contrib/solidus_static_content'
+
+# Adds support for WYSIWYG editors to Solidus
+gem 'solidus_editor', github: 'solidusio-contrib/solidus_editor', branch: 'master'
