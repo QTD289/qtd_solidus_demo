@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405180332) do
+ActiveRecord::Schema.define(version: 20170405180334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -1052,6 +1052,15 @@ ActiveRecord::Schema.define(version: 20170405180332) do
     t.index ["permalink"], name: "index_taxons_on_permalink", using: :btree
     t.index ["position"], name: "index_spree_taxons_on_position", using: :btree
     t.index ["taxonomy_id"], name: "index_taxons_on_taxonomy_id", using: :btree
+  end
+
+  create_table "spree_trackers", force: :cascade do |t|
+    t.string   "environment"
+    t.string   "analytics_id"
+    t.boolean  "active",       default: true
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "store_id"
   end
 
   create_table "spree_transfer_items", force: :cascade do |t|

@@ -313,6 +313,8 @@ GEM
       solidus_core (= 2.1.0)
     solidus_sample (2.1.0)
       solidus_core (= 2.1.0)
+    solidus_trackers (1.0.0)
+      solidus_core (>= 2.1.0.alpha, < 3)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -385,6 +387,7 @@ DEPENDENCIES
   solidus_editor!
   solidus_log_viewer!
   solidus_static_content!
+  solidus_trackers
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
