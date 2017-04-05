@@ -44,3 +44,4 @@ gem 'solidus_static_content', github: 'solidusio-contrib/solidus_static_content'
 gem 'solidus_editor', github: 'solidusio-contrib/solidus_editor', branch: 'master'
 
 gem 'solidus_wishlist', github: 'boomerdigital/solidus_wishlist', branch: 'master'
+gem 'solidus_user_roles', github: 'boomerdigital/solidus_user_roles', branch: '1.3-menu-compatible'

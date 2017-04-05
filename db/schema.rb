@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405180340) do
+ActiveRecord::Schema.define(version: 20170405180342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -412,6 +412,13 @@ ActiveRecord::Schema.define(version: 20170405180340) do
     t.index ["source_id", "source_type"], name: "index_spree_payments_on_source_id_and_source_type", using: :btree
   end
 
+  create_table "spree_permission_sets", force: :cascade do |t|
+    t.string   "name"
+    t.string   "set"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "spree_preferences", force: :cascade do |t|
     t.text     "value"
     t.string   "key"
@@ -712,6 +719,13 @@ ActiveRecord::Schema.define(version: 20170405180340) do
     t.boolean  "mutable",    default: true
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "spree_role_permissions", force: :cascade do |t|
+    t.integer  "role_id"
+    t.integer  "permission_set_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "spree_roles", force: :cascade do |t|
