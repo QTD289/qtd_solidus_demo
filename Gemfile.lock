@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/boomerdigital/solidus_wishlist.git
+  revision: 1fdda01f766c59d3153db1aa2cdb7e3702fbac5d
+  branch: master
+  specs:
+    solidus_wishlist (2.2.0)
+      solidus_core (>= 1.0.0, < 3)
+
+GIT
   remote: https://github.com/solidusio-contrib/solidus_editor.git
   revision: b0be9d1df5b698ad7001372dd722961c7802e949
   branch: master
@@ -313,8 +321,6 @@ GEM
       solidus_core (= 2.1.0)
     solidus_sample (2.1.0)
       solidus_core (= 2.1.0)
-    solidus_trackers (1.0.0)
-      solidus_core (>= 2.1.0.alpha, < 3)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -387,7 +393,7 @@ DEPENDENCIES
   solidus_editor!
   solidus_log_viewer!
   solidus_static_content!
-  solidus_trackers
+  solidus_wishlist!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
