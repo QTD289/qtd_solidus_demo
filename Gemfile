@@ -33,4 +33,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Rails e-commerce
 gem 'solidus', '2.1'
 gem 'solidus_auth_devise'
-gem 'solidus_log_viewer', github: 'solidusio-contrib/solidus_log_viewer' # Improved view for payment logs
+
+# Improved view for payment logs
+gem 'solidus_log_viewer', github: 'solidusio-contrib/solidus_log_viewer'
+
+# Content management of pages for Solidus
+gem 'solidus_static_content', github: 'solidusio-contrib/solidus_static_content'
