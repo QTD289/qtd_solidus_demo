@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/solidusio-contrib/solidus_log_viewer.git
+  revision: 3b50d9a01d08160431389984dc0b3064c3a272eb
+  specs:
+    solidus_log_viewer (1.0.0)
+      solidus_backend (>= 1.0, < 3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -351,6 +358,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   solidus (= 2.1)
   solidus_auth_devise
+  solidus_log_viewer!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
